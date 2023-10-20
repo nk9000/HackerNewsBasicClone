@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Rest of your CSS */
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  color: gold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.news-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: gold;
+}
+
+.news-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.news-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.news-url {
+  color: gold;
+  text-decoration: none;
+}
+
+.loading-message {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* CSS for Nc component */
+
+.news-card {
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  padding: 20px;
+  margin: 10px 0;
+  width: 60%;
+  max-width: 600px;
+  text-align: left;
+  background-color: gold;
+  color: black;
+}
+/* Add this CSS to your styles */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.spinner {
+  border: 5px solid rgba(255, 215, 0, 0.8); /* Golden color */
+  border-top: 5px solid transparent;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  animation: spin 1s linear infinite;
+}
+/* D.css */
+.toggle-comments-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.toggle-comments-button.blue {
+  background-color: blue;
+}
+/* D.css */
+
+/* Other styles */
+
+.loading-spinner {
+  border: 4px solid rgba(255, 215, 0, 0.2);
+  border-top: 4px solid #ffd700;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.comment-box {
+  background-color: gold;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  color: black;
+  margin-top: 2rem;
+  height: auto;
+  border-radius: 2rem;
+}
+.comment-list{
+width: 100%;
+
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.news-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.news-card a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.news-card a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.pagination {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  padding: 20px 10px;
+  margin: 0;
+  height: 2rem;
+  list-style: none;
+}
+
+.pagination a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #040404;
+  margin: 0 8px;
+  font-size: 20px;
+  background-color: gold;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 4rem;
+}
+
+.pagination a:hover {
+  color: aqua;
+}
+
+.active-page {
+  color: aqua;
+}
+
+/* D.css */
+.details-container {
+  background-color: #000000;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  margin: 20px;
+  max-width: 100%;
+  text-align: center;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute; */
+  color: gold;
+  font-family: 'Montserrat', sans-serif;
+  height: 3rem;
+}
+
+.article-title {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.article-author {
+  font-size: 16px;
+}
+
+.visit-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.visit-button:hover {
+  background-color: #0056b3;
+}
+
+.article-date {
+  font-size: 14px;
+  color: #888;
+  margin: 10px 0;
+}
+
+.article-comments {
+  font-size: 14px;
+  color: #888;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+form input {
+  width: 250px;
+  height: 40px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  padding: 0px 10px;
+  font-size: 18px;
+  transition: border-color 0.3s ease;
+}
+
+form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 5px 0 rgba(0, 123, 255, 0.5);
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Animation for input and button */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form input, form button {
+  animation: fadeIn 0.5s ease;
+}
